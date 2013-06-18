@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/realLay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <ListView
+        android:id="@+id/keyList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/keyText"
+        android:layout_centerHorizontal="false" >
+
+    </ListView>
+
+    <EditText
+        android:id="@+id/keyText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/grabButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/keyList"
+        android:layout_toRightOf="@+id/keyText"
+        android:onClick="grabHandler"
+        android:text="grab" />
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="send"
+            android:id="@+id/send"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/grabButton"
+            android:layout_above="@+id/keyList"
+            android:onClick="sendHandler"/>
+
+</RelativeLayout>
