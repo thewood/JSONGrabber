@@ -11,3 +11,7 @@ it is meant to:
   -edit text view to enter a keyword to search for
     -display results in listview
   -or send the keyword entered to a url to get a response / update
+
+
+also tested i believe android 4.2.2 virtual only
+it was really just a quick mock up month+ ago now taking some more thought / fresh eyes
